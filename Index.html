@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" 
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>Valquíria Pires Ribeiro</title>
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <ul>
+                    <li>
+                      <a target="_blabk" href="https://github.com/Valquiriapr">Github</a>
+                    </li>
+            
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/valqu%C3%ADria-pires-ribeiro-973b26212/">Linkedin</a>
+                    </li>
+            
+                    <li>
+                        <a target="_blank" href="https://wa.me/31999999999">WhatsApp</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <section class="container">
+                <div>
+                    <h1>Valquíria Pires Ribeiro</h1>
+                    <h5>QA - Quality Assurance</h5>
+                </div>
+
+                <div onclick="displayAbout()" id="arrow">
+                    <i id="animation" class="fas fa-sort-down"></i>
+                </div>
+
+                <div style="display: none;" id="about">
+                    <p>Profissional em transição de carreira para a área de QA (Quality Assurance), formada em Gerenciamento de Tecnologias da Informação – TI com atuação em empresas nos segmentos de cobrança imobiliária e saúde, desempenhando atividades de desenvolvimento de sistemas e testes, suporte aos usuários em diversos aplicativos e gerenciamento de toda infraestrutura de TI. Participei da implementação e solução de demandas do ERP RM TOTVS, criação de relatórios, consultas SQL e cubos. Sou adaptável às mudanças, detalhista e disposta à colaboração e desafios.</p>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <p>Deixe seu contato</p>
+                    </div>
+
+                    <form action="">
+                        <input type="text" placeholder="Seu melhor email :)">
+                        <button>enviar</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <script>
+            function displayAbout() {
+                /*Script Java-script para chamar a animação */
+                var arrow = document.getElementById('animation');
+                arrow.classList.toggle('rotate');
+                var display = document.getElementById('about');
+                display.classList.toggle('active');
+            }
+        </script>
+    </body>
+
+    <div class="footer">
+        Copyright © 2021 Valquíria Pires Ribeiro. Todos os direitos reservados.
+    </div>
+</html>

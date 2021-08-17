@@ -1,0 +1,164 @@
+* {
+    /* Iniciando com o (*) as configurações valerão para toda a página */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color:black;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style: none;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;  
+}
+
+body {
+    background: url(./Imagens/background.jpeg) no-repeat center center fixed; 
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 45px;
+    background-color: white;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 5px;
+}
+
+header ul li a {
+    transform: 300ms;
+    font-size: small;
+}
+
+header ul li a:hover {
+    color:chocolate;
+    text-decoration: underline;
+}
+
+.container {
+     text-align:center;
+     margin-right: 10%;
+}
+
+.container .name h1 {
+    font-size: 60px;
+}
+
+.container .name h5 {
+    font-size: 25px;
+}
+
+/*Configuração da animação da seta para girar */
+#arrow {
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+/* @keyframes chama a animação */
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+/* Faz a animação girar */
+#animation {
+    transition: 300ms;
+}
+
+/* Calsse para animação */
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important; 
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.form input {
+    width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form button {
+    width: 15%;
+    padding: 5px;
+    background: linear-gradient(to right, #c09717 50%, #9c551b 50%); 
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: #fff;;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    border-radius: 0px 5px 5px 0px;
+    margin-top: 20px;    
+    margin-left: -5px;
+}
+
+.form button:hover {
+    background-position: left bottom;
+}
+
+/*Trabalhar a responsividade */
+@media only screen and (max-width:768px) {
+    .form{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .container .name h1 {
+        font-size: 30px;
+   }
+   
+   .container .name h5 {
+        font-size: 15px;
+    }
+
+    #about p {
+        max-width: 80%;
+        text-align: justify;
+    }
+ }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    font-size: 70%;
+    padding: 5px 15px;
+}
